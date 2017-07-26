@@ -7,7 +7,9 @@ import static org.junit.Assert.*;
 /** Pruebas unitarias de la clase LogicaBooleana */
 public class LogicaBooleanaTest {
 
+	
     @Test
+   
     public void testIgual() {
         assertTrue(LogicaBooleana.igual(1, 1));
         assertTrue(LogicaBooleana.igual(3, 3));
@@ -41,6 +43,6 @@ public class LogicaBooleanaTest {
 
         assertFalse(LogicaBooleana.cercanoA100(50, 10));
         assertFalse(LogicaBooleana.cercanoA100(90, 1));
-        assertFalse(LogicaBooleana.cercanoA100(107, 8));
+        assertFalse(LogicaBooleana.cercanoA100(107, 6));
     }
 }

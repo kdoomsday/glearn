@@ -50,7 +50,12 @@ public class LogicaBooleana {
      * @return Verdadero si no es un día de semana o estamos de vacaciones
      */
     public static boolean despertarseTarde(boolean esDiaDeSemana, boolean vacaciones) {
-        return false;
+        if (esDiaDeSemana == true && vacaciones == false) {
+    	return false;
+        }
+        else {
+        return true;
+        }
     }
 
     /**
@@ -61,6 +66,11 @@ public class LogicaBooleana {
      * @return       Si el número es suficientemente cercano a 100.
      */
     public static boolean cercanoA100(int n, int margen) {
-        return false;
+    	if (100-margen>n||100+margen<n) {
+    	return false;	
+    	}
+    	else {
+    	return true;	
+    	}
     }
 }
