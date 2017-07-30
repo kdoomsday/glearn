@@ -1,5 +1,5 @@
 package basic;
-
+import java.util.ArrayList;
 /**
  * Ya viste un poco de lógica booleana, ahora vamos a ver cómo trabajar con
  * múltiples elementos de un mismo tipo. Según entiendo ya tienes claro la parte
@@ -75,9 +75,16 @@ public class Arreglos {
      * @return Un arreglo de 3 posiciones con el inicial, inicial + 1 e
      *         inicial + 2
      */
-    public static int[] siguientesTres(int inicial) {
-      return new int[0];
+    public static int[] siguientesTres(int inicial) {	
+    	int[] valor = new int[3];
+    	for(inicial=0; inicial<3; inicial++) {
+    	valor[inicial] = inicial;	
+    	}
+		return valor;
+    	
+    	
     }
+   
 
     /**
      * Repetir una cadena un cierto número de veces.
@@ -89,7 +96,11 @@ public class Arreglos {
      * @return Un arreglo de tamaño "veces" con "cadena" en todas las posiciones
      */
     public static String[] repetir(String cadena, int veces) {
-      return new String[0];
+    	String[] repetido = new String[10];
+    	for(veces=0; veces<10; veces++) {
+    	repetido[veces] = cadena;
+    	}
+      return repetido;
     }
 
     /**
@@ -100,5 +111,7 @@ public class Arreglos {
      */
     public static boolean iguales(int[] primero, int[] segundo) {
       return false;
+    
     }
+    
 }
