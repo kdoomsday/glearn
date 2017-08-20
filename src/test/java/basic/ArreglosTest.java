@@ -13,6 +13,13 @@ public class ArreglosTest {
     assertEquals(0, valores[0]);
     assertEquals(1, valores[1]);
     assertEquals(2, valores[2]);
+
+
+    int[] valores2 = Arreglos.siguientesTres(42);
+    assertEquals(3, valores.length);
+    assertEquals(42, valores[0]);
+    assertEquals(43, valores[1]);
+    assertEquals(44, valores[2]);
   }
 
   @Test
@@ -21,6 +28,12 @@ public class ArreglosTest {
       assertEquals(10, resultado.length);
       for (int i=0; i < 10; i++) {
         assertEquals("Eduardo", resultado[i]);
+      }
+
+      int veces2 = 100;
+      String[] resultado2 = Arreglos.repetir("Gabriel", veces2);
+      for (int i=0; i < veces2; i++) {
+          assertEquals("Gabriel", resultado2[i]);
       }
   }
 

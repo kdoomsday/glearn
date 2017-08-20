@@ -75,16 +75,16 @@ public class Arreglos {
      * @return Un arreglo de 3 posiciones con el inicial, inicial + 1 e
      *         inicial + 2
      */
-    public static int[] siguientesTres(int inicial) {	
+    public static int[] siguientesTres(int inicial) {
     	int[] valor = new int[3];
     	for(inicial=0; inicial<3; inicial++) {
-    	valor[inicial] = inicial;	
+    	valor[inicial] = inicial;
     	}
 		return valor;
-    	
-    	
+
+
     }
-   
+
 
     /**
      * Repetir una cadena un cierto número de veces.
@@ -111,7 +111,7 @@ public class Arreglos {
      */
     public static boolean iguales(int[] primero, int[] segundo) {
       return false;
-    
+
     }
-    
+
 }
