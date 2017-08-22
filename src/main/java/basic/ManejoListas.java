@@ -56,7 +56,13 @@ public class ManejoListas {
      * @return El máximo valor de los presentes en la lista.
      */
     public static int maximo(List<Integer> valores) {
-        return -1;
+    	int resultado=valores.get(0);
+    	for(int i=1; i<valores.size();i++) {	
+    	if(resultado<valores.get(i)) {
+    	resultado=valores.get(i);
+    		}
+    	}
+        return resultado;
     }
 
 
@@ -68,7 +74,12 @@ public class ManejoListas {
      * suma es cero.
      */
     public static int suma(List<Integer> valores) {
-        return -1;
+        int suma=0;
+    	for(int i=0;i<valores.size();i++) {
+    		suma= suma+valores.get(i);
+    	}
+    	
+    	return suma;
     }
 
 
@@ -79,6 +90,15 @@ public class ManejoListas {
      * devolver el primero que consiga.
      */
     public static String nombreMasLargo(List<String> nombres) {
-        return null;
+    	String nombre=("");
+    	String tamaño_nombre=null;
+    	for(int i=0; i<nombres.size();i++) {
+    		tamaño_nombre=nombres.get(i);
+    		if(nombre.length()<tamaño_nombre.length()) {
+    			nombre=tamaño_nombre;
+    		}
+    	}
+    	
+        return nombre ;
     }
 }
