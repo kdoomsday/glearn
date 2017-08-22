@@ -16,10 +16,10 @@ public class ArreglosTest {
 
 
     int[] valores2 = Arreglos.siguientesTres(42);
-    assertEquals(3, valores.length);
-    assertEquals(42, valores[0]);
-    assertEquals(43, valores[1]);
-    assertEquals(44, valores[2]);
+    assertEquals(3, valores2.length);
+    assertEquals(42, valores2[0]);
+    assertEquals(43, valores2[1]);
+    assertEquals(44, valores2[2]);
   }
 
   @Test

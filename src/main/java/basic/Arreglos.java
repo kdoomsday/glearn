@@ -77,8 +77,9 @@ public class Arreglos {
      */
     public static int[] siguientesTres(int inicial) {
     	int[] valor = new int[3];
-    	for(inicial=0; inicial<3; inicial++) {
-    	valor[inicial] = inicial;
+    	for(int i=0;i<valor.length;i++) {
+    		valor[i]=inicial;
+    		inicial++;
     	}
 		return valor;
 
@@ -96,9 +97,9 @@ public class Arreglos {
      * @return Un arreglo de tamaño "veces" con "cadena" en todas las posiciones
      */
     public static String[] repetir(String cadena, int veces) {
-    	String[] repetido = new String[10];
-    	for(veces=0; veces<10; veces++) {
-    	repetido[veces] = cadena;
+    	String[] repetido = new String[veces];
+    	for(int i=0; i<repetido.length; i++) {
+    		repetido[i]=cadena;
     	}
       return repetido;
     }
