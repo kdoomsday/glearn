@@ -1,11 +1,7 @@
 package geometría;
-
 public class Rectangulo {
-	Punto CentroR = new Punto();
+	Punto CentroR = new Punto(0, 0);
 	public int BaseR;
 	public int AlturaR;
-	public int RX = CentroR.getX();
-	public int RY = CentroR.getY();
-	public int AreaR = BaseR*AlturaR;
-	
+	public int AreaR = BaseR*AlturaR;	
 }

@@ -1,10 +1,6 @@
 package geometría;
-
 public class Cuadrado {
-		Punto CentroCu = new Punto();
+		Punto CentroCu = new Punto(0, 0);
 		public int lados;
-		public int CuX = CentroCu.getX();
-		public int CuY = CentroCu.getY();
-		public int AreaCu = lados*lados;
-		
+		public int AreaCu = lados*lados;	
 }

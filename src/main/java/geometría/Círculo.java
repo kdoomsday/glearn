@@ -1,9 +1,6 @@
 package geometría;
 public class Círculo {
-	Punto CentroC = new Punto();
-	public int radio = 2;
-	public int CX = CentroC.getX();
-	public int CY = CentroC.getY();
+	Punto CentroC = new Punto(0, 0);
+	public int radio;
 	public double AreaCi = Math.PI * Math.pow(radio,2);
-
 }

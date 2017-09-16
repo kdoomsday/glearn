@@ -1,12 +1,7 @@
 package geometría;
-
 public class Triangulo {
-	Punto CentroT = new Punto();
+	Punto CentroT = new Punto(0, 0);
 	public int BaseT;
 	public int AlturaT;
-	public int TX = CentroT.getX();
-	public int TY = CentroT.getY();
-	public int AreaT = BaseT*AlturaT/2;
-
-	
+	public double AreaT = BaseT*AlturaT/2;	
 }
