@@ -1,21 +1,18 @@
-package geometría;
- 
+package geometria;
+
 public class Punto {
 	private int x, y;
+
 	public Punto(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
-	public int getX(){
+
+	public int getX() {
 			return x;
 	}
-	public int getY(){
-		return y;	
-	}	
+
+	public int getY() {
+		return y;
+	}
 }
-		
-	
-	
-
-
-

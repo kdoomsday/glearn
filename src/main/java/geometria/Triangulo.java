@@ -1,7 +1,7 @@
-package geometría;
+package geometria;
 public class Triangulo {
 	Punto CentroT = new Punto(0, 0);
 	public int BaseT;
 	public int AlturaT;
-	public double AreaT = BaseT*AlturaT/2;	
+	public double AreaT = BaseT*AlturaT/2;
 }

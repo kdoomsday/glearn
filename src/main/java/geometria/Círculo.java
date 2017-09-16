@@ -1,4 +1,4 @@
-package geometría;
+package geometria;
 public class Círculo {
 	Punto CentroC = new Punto(0, 0);
 	public int radio;
