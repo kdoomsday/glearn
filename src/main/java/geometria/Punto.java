@@ -9,7 +9,7 @@ public class Punto {
 	}
 
 	public int getX() {
-			return x;
+		return x;
 	}
 
 	public int getY() {
