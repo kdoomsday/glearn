@@ -5,9 +5,11 @@ public class Rectangulo {
 	private int BaseR;
 	private int AlturaR;
 
-	public Rectangulo(int b, int a) {
+	public Rectangulo(Punto Centro, int b, int a) {
 		BaseR = b;
 		AlturaR = a;
+		this.CentroR = Centro;
+
 	}
 
 	public int AreaR() {
