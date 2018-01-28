@@ -1,20 +1,32 @@
 package geometria;
 
 public class Rectangulo {
-	private Punto CentroR = new Punto(0, 0);
-	private int BaseR;
-	private int AlturaR;
+	private final Punto centro;
+	private final int base;
+	private final int altura;
 
-	public Rectangulo(Punto Centro, int b, int a) {
-		BaseR = b;
-		AlturaR = a;
-		this.CentroR = Centro;
+	public int area() {
+		return base * altura;
+	}
+
+	public Rectangulo(Punto centro, int base, int altura) {
+		super();
+		this.centro = centro;
+		this.base = base;
+		this.altura = altura;
 
 	}
 
-	public int AreaR() {
-		int Area = BaseR * AlturaR;
-		return Area;
+	public Punto getCentro() {
+		return centro;
+	}
+
+	public int getBase() {
+		return base;
+	}
+
+	public int getAltura() {
+		return altura;
 	}
 
 }

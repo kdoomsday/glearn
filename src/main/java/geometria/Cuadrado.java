@@ -1,17 +1,32 @@
 package geometria;
-
+/**
+ * 
+ * @author g33k09
+ *
+ */
 public class Cuadrado {
-	private Punto CentroCu = new Punto(0, 0);
-	private int lados;
-
-	public Cuadrado(Punto Centro, int l) {
-		lados = l;
-		CentroCu = Centro;
+	private final Punto centro;
+	private final int lados;
+/**
+ * Calcula el area de un cuadrado
+ * @return un entero con el area
+ */
+	public int area() {
+		return lados * lados;
 	}
 
-	public int AreaCu() {
-		int Area = lados * lados;
-		return Area;
+	public Cuadrado(Punto centro, int lados) {
+		super();
+		this.centro = centro;
+		this.lados = lados;
+	}
+
+	public Punto getCentro() {
+		return centro;
+	}
+
+	public int getLados() {
+		return lados;
 	}
 
 }

@@ -1,5 +1,9 @@
 package geometria;
-
+/**
+ * Define el punto
+ * @author g33k09
+ *
+ */
 public class Punto {
 	private int x, y;
 

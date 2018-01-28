@@ -1,16 +1,31 @@
 package geometria;
-
+/**
+ * Define un circulo
+ * @author g33k09
+ *
+ */
 public class Circulo {
-	private Punto CentroC = new Punto(0, 0);
-	private int radio;
-
-	public Circulo(Punto Centro, int r) {
-		CentroC = Centro;
-		radio = r;
+	private final Punto centro;
+	private final int radio;
+/**
+ * Calcula el area de un círculo
+ * @return un double con el area
+ */
+	public double area() {
+		return Math.PI * radio * radio;
 	}
 
-	public double AreaCi() {
-		double Area = Math.PI * Math.pow(radio, 2);
-		return Area;
+	public Circulo(Punto centro, int radio) {
+		super();
+		this.centro = centro;
+		this.radio = radio;
+	}
+
+	public Punto getCentro() {
+		return centro;
+	}
+
+	public int getRadio() {
+		return radio;
 	}
 }

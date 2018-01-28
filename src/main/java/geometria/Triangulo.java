@@ -1,21 +1,35 @@
 package geometria;
 
 public class Triangulo {
-	private Punto PuntoA, PuntoB, PuntoC = new Punto(0, 0);
-	private int BaseT;
-	private int AlturaT;
+	private final Punto puntoA, puntoB, puntoC;
 
-	public Triangulo(Punto P1, Punto P2, Punto P3, int b, int a) {
-		BaseT = b;
-		AlturaT = a;
-		PuntoA = P1;
-		PuntoB = P2;
-		PuntoC = P3;
+	public Triangulo(Punto puntoA, Punto puntoB, Punto puntoC) {
+		super();
+		this.puntoA = puntoA;
+		this.puntoB = puntoB;
+		this.puntoC = puntoC;
 	}
 
-	public double AreaT() {
-		int Area = BaseT * AlturaT / 2;
-		return Area;
-
+	public Punto getPuntoA() {
+		return puntoA;
 	}
+
+	public Punto getPuntoB() {
+		return puntoB;
+	}
+
+	public Punto getPuntoC() {
+		return puntoC;
+	}
+
+	public double area() {
+		double Ax = getPuntoA().getX();
+		double Ay = getPuntoA().getY();
+		double Bx = getPuntoB().getX();
+		double By = getPuntoB().getY();
+		double Cx = getPuntoC().getX();
+		double Cy = getPuntoC().getY();
+		return Ax * (By - Cy) + Bx * (Cy - Ay) + Cx * (Ay - By);
+	}
+
 }
