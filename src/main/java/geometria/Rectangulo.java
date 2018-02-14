@@ -1,24 +1,24 @@
 package geometria;
 
-public class Rectangulo {
-	private final Punto centro;
+public class Rectangulo implements FiguraGeometrica {
+	private final Punto esquina;
 	private final int base;
 	private final int altura;
 
-	public int area() {
+	public double area() {
 		return base * altura;
 	}
 
-	public Rectangulo(Punto centro, int base, int altura) {
+	public Rectangulo(Punto esquina, int base, int altura) {
 		super();
-		this.centro = centro;
+		this.esquina = esquina;
 		this.base = base;
 		this.altura = altura;
 
 	}
 
-	public Punto getCentro() {
-		return centro;
+	public Punto getEsquina() {
+		return esquina;
 	}
 
 	public int getBase() {

@@ -1,6 +1,12 @@
 package geometria;
 
-public class Triangulo {
+/**
+ * Define un triángulo
+ * 
+ * @author g33k09
+ *
+ */
+public class Triangulo implements FiguraGeometrica {
 	private final Punto puntoA, puntoB, puntoC;
 
 	public Triangulo(Punto puntoA, Punto puntoB, Punto puntoC) {
@@ -29,7 +35,7 @@ public class Triangulo {
 		double By = getPuntoB().getY();
 		double Cx = getPuntoC().getX();
 		double Cy = getPuntoC().getY();
-		return Ax * (By - Cy) + Bx * (Cy - Ay) + Cx * (Ay - By);
+		return Math.abs((Ax * (By - Cy) + Bx * (Cy - Ay) + Cx * (Ay - By)) / 2);
 	}
 
 }

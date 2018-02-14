@@ -4,7 +4,7 @@ package geometria;
  * @author g33k09
  *
  */
-public class Circulo {
+public class Circulo implements FiguraGeometrica {
 	private final Punto centro;
 	private final int radio;
 /**
