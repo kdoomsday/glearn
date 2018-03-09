@@ -29,13 +29,13 @@ public class Triangulo implements FiguraGeometrica {
 	}
 
 	public double area() {
-		double Ax = getPuntoA().getX();
-		double Ay = getPuntoA().getY();
-		double Bx = getPuntoB().getX();
-		double By = getPuntoB().getY();
-		double Cx = getPuntoC().getX();
-		double Cy = getPuntoC().getY();
-		return Math.abs((Ax * (By - Cy) + Bx * (Cy - Ay) + Cx * (Ay - By)) / 2);
+		double aX = getPuntoA().getX();
+		double aY = getPuntoA().getY();
+		double bX = getPuntoB().getX();
+		double bY = getPuntoB().getY();
+		double cX = getPuntoC().getX();
+		double cY = getPuntoC().getY();
+		return Math.abs((aX * (bY - cY) + bX * (cY - aY) + cX * (aY - bY)) / 2);
 	}
 
 }
